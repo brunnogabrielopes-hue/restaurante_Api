@@ -1,30 +1,35 @@
 {
-  "name": "api_restaurante",
+  "name": "api-restaurante",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx --watch --env-file=.env src/server.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesRambo007/API_RESTAURANTE.git"
+    "url": "git+https://github.com/WagnerLeme/api-restaurante.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/JamesRambo007/API_RESTAURANTE/issues"
+    "url": "https://github.com/WagnerLeme/api-restaurante/issues"
   },
-  "homepage": "https://github.com/JamesRambo007/API_RESTAURANTE#readme",
+  "homepage": "https://github.com/WagnerLeme/api-restaurante#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.4.1",
-    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   }
 }
