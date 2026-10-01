@@ -5,5 +5,7 @@ import categoryController from "./category.controller.js";
 const CategoryRoutes = Router();
 
 CategoryRoutes.post('/', categoryController.create);
+CategoryRoutes.get('/', categoryController.findAll);
+CategoryRoutes.get('/:id', categoryController.findAll);
 
 export default CategoryRoutes;
